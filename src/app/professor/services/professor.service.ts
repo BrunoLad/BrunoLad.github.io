@@ -13,7 +13,7 @@ export class ProfessorService {
         "id": "1",
         "name": "Guilherme",
         "gender": "male",
-        "imagePath": "../../../assets/imgs/maleProfessor.jpg",
+        "imagePath": "assets/images/maleProfessor.jpg",
         "lectures": [
           {
             "id": "5",
@@ -37,7 +37,7 @@ export class ProfessorService {
         "id": "2",
         "name": "João",
         "gender": "male",
-        "imagePath": "../../../assets/imgs/maleProfessor.jpg",
+        "imagePath": "assets/images/maleProfessor.jpg",
         "lectures": [
           {
             "id": "1",
@@ -57,7 +57,7 @@ export class ProfessorService {
         "id": "3",
         "name": "Claudia",
         "gender": "female",
-        "imagePath": "../../../assets/imgs/femaleProfessor.png",
+        "imagePath": "assets/images/femaleProfessor.png",
         "lectures": [
           {
             "id": "1",
@@ -81,7 +81,7 @@ export class ProfessorService {
         "id": "4",
         "name": "Julia",
         "gender": "female",
-        "imagePath": "../../../assets/imgs/femaleProfessor.png",
+        "imagePath": "assets/images/femaleProfessor.png",
         "lectures": [
           {
             "id": "5",
@@ -101,7 +101,7 @@ export class ProfessorService {
         "id": "5",
         "name": "Henrique",
         "gender": "male",
-        "imagePath": "../../../assets/imgs/maleProfessor.jpg",
+        "imagePath": "assets/images/maleProfessor.jpg",
         "lectures": [
           {
             "id": "2",
