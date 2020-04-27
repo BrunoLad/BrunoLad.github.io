@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.less"
             ],
             "scripts": []
@@ -123,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "teaching-app"
+    }
+  },
+  "defaultProject": "teaching-app",
+  "cli": {
+    "analytics": "891faff6-895a-42d7-8d09-d14c11be8302"
+  }
 }

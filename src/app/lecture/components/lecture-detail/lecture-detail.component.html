@@ -1,0 +1,35 @@
+<div
+    *ngIf="selectedLecture$ | async as lecture"
+    class="container my-2">
+    <div class="row justify-content-center text-center">
+        <ng-container *ngTemplateOutlet="lecture.professors.length
+            ? defaultContent: emptyContent; context: { lecture: lecture }"></ng-container>
+    </div>
+</div>
+
+<ng-template #emptyContent let-lecture="lecture">
+    <div class="col-12">
+        <p>
+            <ng-container *ngTemplateOutlet="backButton"></ng-container>
+            Nenhum professor leciona {{lecture.name}}.
+        </p>
+    </div>
+</ng-template>
+
+<ng-template #defaultContent let-lecture="lecture">
+    <div class="col-12">
+        <p>
+            <ng-container *ngTemplateOutlet="backButton"></ng-container>
+            Os professores que lecionam a disciplina de <span class="name">{{lecture.name}}</span> são:
+        </p>
+    </div>
+    <div class="col-12">
+        <ul class="text-center" *ngFor="let professor of lecture.professors">
+            <li>{{professor.name}}</li>
+        </ul>
+    </div>
+</ng-template>
+
+<ng-template #backButton>
+    <button routerLink="/lectures" class="btn btn-warning btn-sm mr-2">Voltar</button>
+</ng-template>

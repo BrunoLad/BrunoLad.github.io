@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <div 
+            *ngFor="let professor of professors$ | async"
+            class="card col-12 col-md-5 col-lg-3 mx-4 my-2"
+            style="width: 18rem;">
+            <img 
+                src="{{professor?.imagePath}}"
+                class="card-image-top"
+                alt="">
+            <div class="card-body">
+            <h5 class="card-title"><fa-icon [icon]="faUserGraduate"></fa-icon> {{getProfessorTitle(professor)}}</h5>
+            <p class="card-text">Clique no botão abaixo para ver a lista de disciplinas deste professor.</p>
+            <a routerLink="/professor/{{professor.id}}" class="btn btn-warning">Disciplinas</a>
+            </div>
+        </div>
+    </div>
+</div>
